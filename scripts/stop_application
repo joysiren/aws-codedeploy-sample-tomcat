@@ -3,3 +3,6 @@
 set -e
 
 service tomcat7 stop
+if [ -d /tmp/codedeploy-deployment-staging-area ]; then
+    rm -rf /tmp/codedeploy-deployment-staging-area
+fi
